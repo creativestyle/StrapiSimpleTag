@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simpletags",
+  "info": {
+    "singularName": "simpletag",
+    "pluralName": "simpletags",
+    "displayName": "SimpleTag"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "key": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "value": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  }
+}
