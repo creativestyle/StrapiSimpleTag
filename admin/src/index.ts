@@ -34,7 +34,7 @@ export default {
       icon: PluginIcon,
       intlLabel: {
         id: `${pluginId}.plugin.name`,
-        defaultMessage: name,
+        defaultMessage: pluginPkg.strapi.displayName,
       },
       Component: async () => {
         const component = await import(/* webpackChunkName: "[request]" */ './pages/App');
@@ -60,7 +60,7 @@ export default {
 
     app.customFields.register({
       name: "choice",
-      pluginId: pluginId,
+      pluginId: "simple-tag",
       type: "string",
       intlLabel: {
         id: getTrad('choice.name'),
